@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--text)
+}
+
+/*Adicionando fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url(//db.onlinewebfonts.com/c/96996b95c19ecf8733387b6c0b2311e3?family=Rossetti);
+
+:root{
+    --text: 'Montserrat', sans-serif;
+    --title: 'Rossetti', sans-serif;
+
+    --cor1: #d9c51d;
+    --cor2: #181818;
+}
+
+/*Mobile first*/
+
+header{
+    border-bottom: 2px solid #d9c51d;
+    color: #d9c51d;
+    background-color: #181818;
+    font-family: var(--title);
+    max-width: 100%;
+}
+
+header > h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*Menu Hamburguer*/
+menu{
+    display: none;
+}
+
+menu > ul{
+    list-style-type: none;
+}
+
+menu > ul > li{
+    display: block;
+    max-width: 100%;
+    text-align: center;
+
+    border-top: 1px solid white;
+}
+
+menu > ul > li > a{
+    border-radius: 10px;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    transition: 0.7s;
+}
+
+menu > ul  > li > a:hover{
+    background-color: #4e4e4e;
+    border-radius: 10px;
+
+}
+
+/*Icon Hamburguer*/
+
+span#burguer{
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+span#burguer:hover{
+    background-color: #4e4e4e;
+    
+}
+
+
+body, html{
+    height: 100%;
+}
+
+h1{
+    padding: 10px;
+}
+
+div#background{
+    background: url(../images/churraco\ -\ pq.jpg) no-repeat ;
+    background-position: center;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    margin-bottom: 40px;
+
+    position: relative;
+} 
+
+img#arrow{
+    width: 60px;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+    /*Aplicando animação da seta pulando*/
+    animation: jumping 1s linear infinite;
+}
+
+main{
+    position: relative;
+}
+
+main > h1{
+    text-align: center;
+}
+
+div > p{
+    width: 70%;
+    font-family: var(--text);
+    font-size: 1.2em;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.781);
+    
+
+    /*Centralizando*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+#container{
+    display: flex;
+    flex-direction: column;
+    background-color: #181818;
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    
+}
+
+#container > h2{
+    margin-bottom: 20px;
+}
+
+.services> h1{
+    font-size: 1.2em;
+}
+
+.services-img{
+    padding-top: 20px;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    max-width: 12%;
+}
+
+#buffets{
+    padding: 20px;
+    font-size: 1.4em;
+    border-bottom: 5px solid white;
+}
+
+#dinner{
+    padding: 20px;
+    font-size: 1.4em;
+    border-bottom: 5px solid white;
+}
+
+#lunch{
+    padding: 20px;
+    font-size: 1.4em;
+    border-bottom: 5px solid white;
+}
+
+#churrasco{
+    padding: 20px;
+    font-size: 1.4em;
+    border-bottom: 5px solid white;
+}
+
+/*TABLETS*/
+@media screen and (min-width: 768px) and (max-width: 992px){
+
+
+}   
+
+/*TELAS GRANDES*/
+
+@media screen and (min-width: 992px) {
+
+    header > h1{
+        padding-top: 15px;
+    }
+
+    menu > ul > li > a{
+        padding: 15px;
+    }
+
+    span#burguer{
+        display: none;
+    }
+
+    menu{
+        display: block;
+        margin: 20px;
+        text-align: center;
+    }
+
+    menu > ul > li{
+        display: inline-block;
+        border: none;
+    }
+    
+    div#background{
+        background: url(../images/churraco.jpg);
+        background-position: center;
+    }
+
+    #background > p{
+       width: 500px;
+    }
+
+    #container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #181818; 
+    }
+
+    .services-img{
+        display: block;
+        max-width: 50%;
+    }
+
+    #buffets{
+        padding-top: 50px;
+        padding-right: 90px;
+        padding-left: 80px;
+        padding-bottom: 50px;
+        font-size: 1.4em;
+        border-bottom: none;
+        border-right: 5px solid white;
+        
+    }
+    
+    #dinner{
+        padding-top: 49px;
+        padding-right: 90px;
+        padding-left: 100px;
+        padding-bottom: 50px;
+        font-size: 1.4em;
+        border-bottom: none;
+        border-right: 5px solid white;
+    }
+    
+    #lunch{
+        padding-top: 50px;
+        padding-right: 90px;
+        padding-left: 100px;
+        padding-bottom: 50px;
+        
+        border-bottom: none;
+        border-right: 5px solid white;
+    }
+
+    #churrasco{
+        padding-top: 38px;
+        padding-right: 70px;
+        padding-bottom: 50px;
+        padding-left: 90px;
+        border-bottom: none;
+    }
+  }
+    
+
+/*Animação da seta pulando*/
+
+@keyframes jumping{
+    from{
+        transform: translateY(-15px);
+    }
+
+    50%{
+        transform: translateY(0);
+    }
+
+    to{
+        transform: translateY(-15px);
+    }
+}

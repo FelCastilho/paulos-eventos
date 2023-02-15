@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--text)
+}
+
+/*Adicionando fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url(//db.onlinewebfonts.com/c/96996b95c19ecf8733387b6c0b2311e3?family=Rossetti);
+
+:root{
+    --text: 'Montserrat', sans-serif;
+    --title: 'Rossetti', sans-serif;
+
+    --cor1: #d9c51d;
+    --cor2: #181818;
+}
+
+/*Mobile first*/
+
+header{
+    border-bottom: 2px solid #d9c51d;
+    color: #d9c51d;
+    background-color: #181818;
+    font-family: var(--title);
+    max-width: 100%;
+}
+
+header > h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*Menu Hamburguer*/
+menu{
+    display: none;
+}
+
+menu > ul{
+    list-style-type: none;
+}
+
+menu > ul > li{
+    display: block;
+    max-width: 100%;
+    text-align: center;
+
+    border-top: 1px solid white;
+}
+
+menu > ul > li > a{
+    border-radius: 10px;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    transition: 0.7s;
+}
+
+menu > ul  > li > a:hover{
+    background-color: #4e4e4e;
+    border-radius: 10px;
+
+}
+
+/*Icon Hamburguer*/
+
+span#burguer{
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+span#burguer:hover{
+    background-color: #4e4e4e;
+    
+}

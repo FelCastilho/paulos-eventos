@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Links Externos-->
+    <link rel="stylesheet" href="../estilos/index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+
+    <title>Paulo's Eventos</title>
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Paulo's Eventos</h1>
+
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        
+        <menu id="itens">
+            <ul>
+               <li><a href="contact.html">Contato</a></li>
+               <li><a href="history.html">Nossa história</a></li>
+               <li><a href="avaliation.html">Avaliações</a></li>
+            </ul>
+        </menu>
+    </header>
+
+    <main>
+
+        <div id="background">
+
+            <!--Imagem implementada via background-->
+                <p>A melhor forma de realizar seu evento!</p>
+            <img id="arrow" src="../images/Arrow.png" alt="Arrow">
+
+        </div>
+
+            <h1>Trabalhamos com:</h1>
+
+        <div id="container">
+            
+            <div id="buffets">
+                <img class="services-img" src="../images/serviços/buffet.png" alt="">                
+                <h2>Buffets</h2>
+            </div>
+
+            <div id="dinner">
+                <img class="services-img" src="../images/serviços/dinner.png" alt="">     
+                <h2>Jantares</h2>
+            </div>
+
+            <div id="lunch">
+                <img class="services-img" src="../images/serviços/lunch.png" alt="">
+                
+                <h2>Almoços</h2>
+            </div>
+
+            <div id="churrasco">
+                <img class="services-img" src="../images/serviços/churrasco.png" alt="">
+                <h2>Churrasco</h2>
+            </div>
+
+        </div>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ducimus possimus consequatur deleniti, velit nulla dicta, voluptates quasi laboriosam a distinctio tenetur eveniet quod fugiat cum magnam vitae est? Assumenda.</p>
+    </main>
+    <script>  
+
+        function mudouTamanho(){
+        if(window.innerWidth >= 768){
+            itens.style.display = 'block'
+        }else{
+            itens.style.display = 'none'
+        }
+       }
+    
+       function clickMenu(){
+    
+        var burguer = document.getElementById('burguer') // var simbolo hamburguer 
+    
+            if(itens.style.display == 'block'){
+                itens.style.display = 'none'
+          
+            }else{
+                itens.style.display = 'block'
+                
+            }
+       }
+    </script>
+</body>
+
+</html>
